@@ -1,3 +1,15 @@
 #output-results {
   /*display: none;*/
 }
+.jumbotron {
+  text-align: center;
+  background-color: #85ABC9;
+}
+
+body {
+  background-color: #FF5D4D;
+}
+
+#input-number {
+  width: 50%;
+}

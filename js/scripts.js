@@ -28,6 +28,8 @@ function count (userNumber) {
       results.push(i);
     } else if (i % 3 == 0) {
       results.push('Ping');
+    } else if (i % 5 == 0) {
+      results.push('Pong');
     }
   }
 }
@@ -43,5 +45,6 @@ $(document).ready(function() {
     var countUserNumber = count(userInput);
     $('#output-results').text(results);
     $('.output').show();
+
   });
 });
