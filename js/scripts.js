@@ -15,7 +15,9 @@ function count (userNumber) {
 $(document).ready(function() {
   $('form').submit(function(event) {
     event.preventDefault();
+    $('.output').hide();
     var userInput = parseInt($('#input-number').val());
     var countUserNumber = count(userInput);
+    $('.output').show();
   });
 });
