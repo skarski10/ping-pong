@@ -40,11 +40,13 @@ function count (userNumber) {
 $(document).ready(function() {
   $('form').submit(function(event) {
     event.preventDefault();
-    $('.output').hide();
+    $('#output-results').hide();
+    $('#output-results').show();
     var userInput = parseInt($('#input-number').val());
     var countUserNumber = count(userInput);
-    $('#output-results').text(results);
-    $('.output').show();
+    var display = results.forEach(function(results) {
+      $('#output-results').text();
+    });
 
   });
 });
