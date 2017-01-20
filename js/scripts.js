@@ -1,7 +1,7 @@
 //Busibness logic
+var results = [];
 function count (userNumber) {
-  var results = [];
-  var userNumber = 10; //for testing
+  // var userNumber = 10; //for testing
   for (i = 1; i <= userNumber; i++) {
       results.push(i);
       console.log(results);
@@ -18,6 +18,7 @@ $(document).ready(function() {
     $('.output').hide();
     var userInput = parseInt($('#input-number').val());
     var countUserNumber = count(userInput);
+    $('#output-results').text(results);
     $('.output').show();
   });
 });
