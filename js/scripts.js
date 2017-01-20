@@ -3,8 +3,7 @@ var results = [];
 function count (userNumber) {
   // var userNumber = 10; //for testing
   for (i = 1; i <= userNumber; i++) {
-      results.push(i);
-      console.log(results);
+          console.log(results);
   }
 }
 
