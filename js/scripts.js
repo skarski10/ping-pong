@@ -21,11 +21,16 @@
 // }
 
 var results = [];
+var display = results.forEach(function(result) {
+
+});
 
 function count (userNumber) {
   for (i = 1; i <= userNumber; i++) {
     if (i % 3 && i % 5) {
       results.push(i);
+    } else if (i % 3 == 0 && i % 5 == 0) {
+        results.push('Ping-Pong');
     } else if (i % 3 == 0) {
       results.push('Ping');
     } else if (i % 5 == 0) {
@@ -44,9 +49,7 @@ $(document).ready(function() {
     $('#output-results').show();
     var userInput = parseInt($('#input-number').val());
     var countUserNumber = count(userInput);
-    var display = results.forEach(function(results) {
-      $('#output-results').text();
-    });
+    $('#output-results').text(results);
 
   });
 });
