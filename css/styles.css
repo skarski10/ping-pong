@@ -1,13 +1,12 @@
-#output-results {
-  /*display: none;*/
-}
+
 .jumbotron {
   text-align: center;
-  background-color: #85ABC9;
+  background-color: #154733;
+  color: white;
 }
 
 body {
-  background-color: #FF5D4D;
+  background-color: #FEE123;
 }
 
 #input-number {

@@ -20,36 +20,37 @@
 //   }
 // }
 
-var results = [];
-var display = results.forEach(function(result) {
-
-});
 
 function count (userNumber) {
+  var results = [];
   for (i = 1; i <= userNumber; i++) {
-    if (i % 3 && i % 5) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      results.push('Ping-Pong');
+    } else  if (i % 3 && i % 5) {
       results.push(i);
-    } else if (i % 3 == 0 && i % 5 == 0) {
-        results.push('Ping-Pong');
     } else if (i % 3 == 0) {
       results.push('Ping');
     } else if (i % 5 == 0) {
       results.push('Pong');
     }
   }
+  display(results);
+  console.log(results);
 }
 
+function display (number) {
+  for (n = 0; n < number.length; n++){
+    $('#users-results').append('<li>' + number[n] + '</li>');
+  }
+}
 
 
 //User logic
 $(document).ready(function() {
   $('form').submit(function(event) {
+    $('#users-results').empty();
     event.preventDefault();
-    $('#output-results').hide();
-    $('#output-results').show();
-    var userInput = parseInt($('#input-number').val());
+    var userInput = $('#input-number').val();
     var countUserNumber = count(userInput);
-    $('#output-results').text(results);
-
   });
 });
