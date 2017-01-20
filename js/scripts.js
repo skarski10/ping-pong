@@ -12,3 +12,10 @@ function count (userNumber) {
 
 
 //User logic
+$(document).ready(function() {
+  $('form').submit(function(event) {
+    event.preventDefault();
+    var userInput = parseInt($('#input-number').val());
+    var countUserNumber = count(userInput);
+  });
+});

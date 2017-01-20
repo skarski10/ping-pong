@@ -10,6 +10,10 @@ This programs will count to a number the user inputs
 * **Input:** 4
 * **Output:** [1, 2, 3, 4]
 
+This program will take a number input from the user and return the results
+* **Input:** 2
+* **Output:** 1, 2
+
 This program will insert "ping" whenever a numbers divisible by 3
 * **Input:** 3
 * **Output:** "ping"
