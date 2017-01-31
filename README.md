@@ -1,7 +1,7 @@
 #Course Suggester Project
 **Second week Friday review Epicodus, 01.20.17**
 ###By Kory Skarbek
-###[Play Ping-Pong](skarski10.github.io/ping-pong)
+###[Play Ping-Pong](http://skarski10.github.io/ping-pong)
 ##Description
 This webpage will let you input a number and then count up to that number. The exception will be that numbers divisible by 3 will be replaced by ping, numbers divisible by 5 will be placed by pong and numbers divisible by 15 will be replaced by ping-pong.
 
